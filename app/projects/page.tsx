@@ -20,9 +20,9 @@ export default async function ProjectsPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allProjects.find((project) => project.slug === "unkey")!;
-  const top2 = allProjects.find((project) => project.slug === "planetfall")!;
-  const top3 = allProjects.find((project) => project.slug === "highstorm")!;
+  const featured = allProjects.find((project) => project.slug === "coding-dojo")!;
+  const top2 = allProjects.find((project) => project.slug === "school-sign")!;
+  const top3 = allProjects.find((project) => project.slug === "rome-antique")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
@@ -46,7 +46,7 @@ export default async function ProjectsPage() {
             Projects
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of the projects are from work and some are on my own time.
+            Between academic work, technical tests and passion projects, I stay quite busy.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />

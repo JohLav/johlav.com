@@ -1,24 +1,24 @@
 import "../global.css";
-import { Inter } from "@next/font/google";
-import LocalFont from "@next/font/local";
+import { Inter } from "next/font/google";
+import LocalFont from "next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "johlav.com",
+    template: "%s | johlav.com",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Fullstack JS Dev | LyonJS & Duchess Co-orga",
   openGraph: {
-    title: "chronark.com",
+    title: "johlav.com",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "Fullstack JS Dev | LyonJS & Duchess Co-orga",
+    url: `http://localhost:${process.env.PORT || 3000}`, // IN PROD  https://johlav.com
+    siteName: "johlav.com",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: `http://localhost:${process.env.PORT || 3000}/og.png`, // IN PROD https://johlav.com/og.png
         width: 1920,
         height: 1080,
       },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Johlav",
     card: "summary_large_image",
   },
   icons: {
