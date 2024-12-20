@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     title: "johlav.com",
     description:
       "Fullstack JS Dev | LyonJS & Duchess Co-orga",
-    url: `http://localhost:${process.env.PORT || 3000}`, // IN PROD  https://johlav.com
+    url: "https://johlav-com.vercel.app",
     siteName: "johlav.com",
     images: [
       {
-        url: `http://localhost:${process.env.PORT || 3000}/og.png`, // IN PROD https://johlav.com/og.png
+        url: `https://johlav-com.vercel.app/og.png`,
         width: 1920,
         height: 1080,
       },
