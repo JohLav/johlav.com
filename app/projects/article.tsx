@@ -39,7 +39,7 @@ export const Article: React.FC<Props> = ({ project, views }) => {
         <p className="z-20 my-4 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200">
           {project.description}
         </p>
-        <div className="flex justify-start items-center gap-2">
+        <div className="flex justify-start items-center gap-2 flex-wrap">
           {parsedTechnology &&
             parsedTechnology.map((tech) => {
               const Icon = tech.icon;

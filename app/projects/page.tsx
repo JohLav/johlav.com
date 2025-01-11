@@ -96,7 +96,7 @@ export default async function ProjectsPage() {
                 <p className="my-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   {featured.description}
                 </p>
-                <div className="flex justify-start items-center gap-2">
+                <div className="flex justify-start items-center gap-2 flex-wrap">
                   {parseTechnology(featured.technology) &&
                     parseTechnology(featured.technology).map((tech) => {
                       const Icon = tech.icon;
