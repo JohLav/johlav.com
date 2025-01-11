@@ -1,27 +1,27 @@
 {
-	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-	"files": {
-		"ignoreUnknown": false,
-		"ignore": ["node_modules", ".next", "dist", ".contentlayer"]
-	},
-	"formatter": {
-		"enabled": true,
-		"indentStyle": "tab",
-		"ignore": ["node_modules", ".next", "dist", ".contentlayer"]
-	},
-	"javascript": {
-		"formatter": {
-			"quoteStyle": "double"
-		}
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"recommended": true
-		},
-		"ignore": ["node_modules", ".next", "dist"]
-	},
-	"organizeImports": {
-		"enabled": true
-	}
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "files": {
+    "ignoreUnknown": false,
+    "ignore": ["node_modules", ".next", "dist", ".contentlayer"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "ignore": ["node_modules", ".next", "dist", ".contentlayer"]
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true
+    },
+    "ignore": ["node_modules", ".next", "dist"]
+  },
+  "organizeImports": {
+    "enabled": true
+  }
 }
