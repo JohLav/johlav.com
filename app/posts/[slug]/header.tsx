@@ -7,7 +7,7 @@ import { FaArrowLeft, FaGithub, FaRegEye, FaTwitter } from "react-icons/fa6";
 type Props = {
   post: {
     title: string;
-    description: string;
+    description?: string | undefined;
   };
 
   views: number;
