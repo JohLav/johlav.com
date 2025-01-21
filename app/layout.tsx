@@ -5,6 +5,7 @@ import LocalFont from "next/font/local";
 import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://johlav-com.vercel.app"),
   title: {
     default: "johlav.com",
     template: "%s | johlav.com",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "johlav.com",
     images: [
       {
-        url: "https://johlav-com.vercel.app/og.png",
+        url: "/og.png",
         width: 1920,
         height: 1080,
       },
