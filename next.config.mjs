@@ -6,6 +6,8 @@ const nextConfig = {
   experimental: {
     mdxRs: true,
   },
+  reactStrictMode: true,
+  swcMinify: true,
 };
 
 export default withContentlayer(nextConfig);
