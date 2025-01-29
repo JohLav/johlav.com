@@ -29,8 +29,7 @@ export default async function PostsPage() {
             Blog
           </h2>
           <p className="mt-4 text-zinc-400">
-            Sometimes I like to share what I've learned or other interesting
-            things.
+            Sometimes I like to share what I've learned or other things.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
