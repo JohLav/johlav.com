@@ -33,7 +33,7 @@ export default async function ProjectsPage() {
 
   const featured = findProjectBySlug(allProjects, "coding-dojo");
   const top2 = findProjectBySlug(allProjects, "school-sign");
-  const top3 = findProjectBySlug(allProjects, "rome-antique");
+  const top3 = findProjectBySlug(allProjects, "flavour-tracker");
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(

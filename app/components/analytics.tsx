@@ -3,6 +3,9 @@
 export function Analytics() {
   const token = process.env.NEXT_PUBLIC_BEAM_TOKEN;
   if (!token) {
+    console.warn(
+      "Beam Analytics token is missing. Please check your environment variables.",
+    );
     return null;
   }
   return (
