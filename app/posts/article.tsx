@@ -1,7 +1,7 @@
 import type { Post } from "@/.contentlayer/generated";
 import Link from "next/link";
+import type React from "react";
 import { FaRegEye } from "react-icons/fa6";
-import React from "react";
 
 interface Props {
   post: Post;

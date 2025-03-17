@@ -1,9 +1,9 @@
-import { Navigation } from "@/app/components/nav";
-import React from "react";
-import { allPosts } from "contentlayer/generated";
 import { Card } from "@/app/components/card";
+import { Navigation } from "@/app/components/nav";
 import { Article } from "@/app/posts/article";
 import { Redis } from "@upstash/redis";
+import { allPosts } from "contentlayer/generated";
+import React from "react";
 
 const redis = Redis.fromEnv();
 

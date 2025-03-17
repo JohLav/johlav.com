@@ -3,8 +3,8 @@ import { allProjects } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { Header } from "./header";
 import "./mdx.css";
-import { Redis } from "@upstash/redis";
 import { ReportView } from "@/app/components/view";
+import { Redis } from "@upstash/redis";
 
 export const revalidate = 60;
 

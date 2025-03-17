@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
+import { BiLogoGmail } from "react-icons/bi";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import { Card } from "../components/card";
 import { Navigation } from "../components/nav";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
-import { BiLogoGmail } from "react-icons/bi";
 
 const socials = [
   {

@@ -1,5 +1,6 @@
-import { IconType } from "react-icons";
+import type { IconType } from "react-icons";
 import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
+import { RiNextjsFill, RiPhpFill, RiVercelFill } from "react-icons/ri";
 import {
   SiExpress,
   SiFigma,
@@ -9,7 +10,6 @@ import {
   SiSymfony,
   SiVitest,
 } from "react-icons/si";
-import { RiNextjsFill, RiPhpFill, RiVercelFill } from "react-icons/ri";
 
 export interface Technology {
   name: string;

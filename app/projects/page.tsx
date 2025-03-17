@@ -1,13 +1,13 @@
 import type { Project } from "@/.contentlayer/generated";
+import { parseTechnology } from "@/app/components/technologyIcons";
 import { Redis } from "@upstash/redis";
 import { allProjects } from "contentlayer/generated";
 import Link from "next/link";
 import React from "react";
+import { FaRegEye } from "react-icons/fa6";
 import { Card } from "../components/card";
 import { Navigation } from "../components/nav";
 import { Article } from "./article";
-import { FaRegEye } from "react-icons/fa6";
-import { parseTechnology } from "@/app/components/technologyIcons";
 
 const redis = Redis.fromEnv();
 
@@ -32,7 +32,7 @@ export default async function ProjectsPage() {
   }
 
   const featured = findProjectBySlug(allProjects, "coding-dojo");
-  const top2 = findProjectBySlug(allProjects, "school-sign");
+  const top2 = findProjectBySlug(allProjects, "promo-code");
   const top3 = findProjectBySlug(allProjects, "flavour-tracker");
   const sorted = allProjects
     .filter((p) => p.published)
@@ -97,19 +97,18 @@ export default async function ProjectsPage() {
                   {featured.description}
                 </p>
                 <div className="flex justify-start items-center gap-2 flex-wrap">
-                  {parseTechnology(featured.technology) &&
-                    parseTechnology(featured.technology).map((tech) => {
-                      const Icon = tech.icon;
-                      return (
-                        <p
-                          key={tech.name}
-                          className="inline-flex justify-center items-center gap-1 max-w-32 text-sm duration-150 text-zinc-400 group-hover:text-zinc-300 rounded-md border border-zinc-500 px-2 py-0.5 font-semibold"
-                        >
-                          <span>{Icon && <Icon />}</span>
-                          <span>{tech.name}</span>
-                        </p>
-                      );
-                    })}
+                  {parseTechnology(featured.technology)?.map((tech) => {
+                    const Icon = tech.icon;
+                    return (
+                      <p
+                        key={tech.name}
+                        className="inline-flex justify-center items-center gap-1 max-w-32 text-sm duration-150 text-zinc-400 group-hover:text-zinc-300 rounded-md border border-zinc-500 px-2 py-0.5 font-semibold"
+                      >
+                        <span>{Icon && <Icon />}</span>
+                        <span>{tech.name}</span>
+                      </p>
+                    );
+                  })}
                 </div>
                 <div className="absolute bottom-4 md:bottom-8">
                   <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">

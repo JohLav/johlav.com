@@ -1,8 +1,8 @@
 import type { Project } from "@/.contentlayer/generated";
-import Link from "next/link";
-import { FaRegEye } from "react-icons/fa6";
-import React from "react";
 import { parseTechnology } from "@/app/components/technologyIcons";
+import Link from "next/link";
+import type React from "react";
+import { FaRegEye } from "react-icons/fa6";
 
 interface Props {
   project: Project;
@@ -40,19 +40,18 @@ export const Article: React.FC<Props> = ({ project, views }) => {
           {project.description}
         </p>
         <div className="flex justify-start items-center gap-2 flex-wrap">
-          {parsedTechnology &&
-            parsedTechnology.map((tech) => {
-              const Icon = tech.icon;
-              return (
-                <p
-                  key={tech.name}
-                  className="inline-flex justify-center items-center gap-1 max-w-32 text-xs duration-1000 text-zinc-400 group-hover:text-zinc-200 rounded-md border border-zinc-500 px-2 py-0.5 font-semibold"
-                >
-                  <span>{Icon && <Icon />}</span>
-                  <span>{tech.name}</span>
-                </p>
-              );
-            })}
+          {parsedTechnology?.map((tech) => {
+            const Icon = tech.icon;
+            return (
+              <p
+                key={tech.name}
+                className="inline-flex justify-center items-center gap-1 max-w-32 text-xs duration-1000 text-zinc-400 group-hover:text-zinc-200 rounded-md border border-zinc-500 px-2 py-0.5 font-semibold"
+              >
+                <span>{Icon && <Icon />}</span>
+                <span>{tech.name}</span>
+              </p>
+            );
+          })}
         </div>
       </article>
     </Link>
